@@ -1,7 +1,7 @@
 #ifndef TESTS_COMMON_H
 #define TESTS_COMMON_H
 
-
+// with C++20 features
 // Helper templates for static testing
  
 
