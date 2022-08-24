@@ -15,7 +15,7 @@ public:
 };
 using valptr = unique_ptr<AbstractVal>;
 
-class Seznam 
+class List 
 {
 public:
 	void add(valptr p) 
@@ -31,13 +31,13 @@ public:
 	}
 	
 	
-	Seznam(){}
-	Seznam(const Seznam& s) 
+	List(){}
+	List(const List& s) 
 	{
 		clone(s);
 	}
 
-	Seznam& operator=(const Seznam& s) 
+	List& operator=(const List& s) 
 	{
 		if (this == &s) 
 			return *this;
@@ -47,7 +47,7 @@ public:
 	}
 private:
 	vector<valptr> pole;
-	void clone(const Seznam& s) 
+	void clone(const List& s) 
 	{
 		for (auto&& x : s.pole)
 			pole.push_back(x->clone());
