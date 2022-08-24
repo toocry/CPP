@@ -1,3 +1,4 @@
 ## The goal of the program
-We load the database of articles from the file and the list of queries from the second file or standard input. For each query, we display on standard output a list of articles that contain all the words in the query, including an excerpt of the article containing the first search word.
+
+Each line of standard input contains a real function statement,written as an  infix expression. The goal is to parse each such expression into a syntactic tree, derive the function, simplify the result, and write it out as an infix.
 
